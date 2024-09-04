@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "GT-Pressure";
+  src: local("GT-Pressure"), url("/fonts/GT-Pressura-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JeanLuc-Bold";
+  src: local("JeanLuc-Bold"), url("/fonts/JeanLuc-Bold.ttf") format("ttf");
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "JeanLuc-Thin";
+  src: local("JeanLuc-Thin"), url("/fonts/JeanLuc-Thin.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   overflow-x: hidden;
 
@@ -14,18 +35,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-#root {
-  /* width: 100%;
-  height: 100%; */
+* {
+  @apply font-JeanLuc-Bold;
+  @apply cursor-default;
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: black;
 }
 
 body {
