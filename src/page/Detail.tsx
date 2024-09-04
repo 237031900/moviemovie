@@ -9,6 +9,7 @@ import {
 import { Col, Dropdown, Flex, MenuProps, message, Row } from "antd";
 import Ticketing from "../components/Ticketing";
 import Dead from "../assets/dead.jpg";
+import { Link } from "react-router-dom";
 
 const Detail = () => {
   const [messageApi, contextHolder] = message.useMessage();
@@ -65,7 +66,9 @@ const Detail = () => {
           <Flex vertical className="px-8 py-4">
             <Flex gap={20}>
               <ArrowLeftOutlined style={{ fontSize: 24 }} />
-              <p className="text-[24px]">Back</p>
+              <Link to="/cinema" className="text-[24px]">
+                Back
+              </Link>
             </Flex>
             <Flex align="stretch" gap={20}>
               <img className="m-auto h-full" src={Dead} loading="lazy" />
